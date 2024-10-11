@@ -35,22 +35,36 @@ Python Flask Sever use exported pickle file and JSON file, it does the actual im
 On website UI we drag and drop the image on the Drop Zone and when it send this image to back-end, Python Flask Sever will use that image for the classification. We are going to build a website or UI or a front-end for our sport persons classifier project we will be using a simple HTML, CSS, JavaScript to build the UI which will make HTTP call to our back-end using j Query.
 
 ## Tech-Stack-Used
+ We have classify the whole project into three directories 
+    - model
+    - server
+    - UI
 
 **Frontend**
 ```bash
-vite (bundler-react)
-tailwindcss (styling)
-react-icons (icons)
-react-router-dom (routing)
-react-toastify (notify)
-axios (API)
+HTML
+CSS
+JS
+Jquery
 ```
-**Backend**
+**Backend Server**
 ```bash
-express (API)
-jwt-token (token)
-nodemail (MAIL)
-bcrypt (encryption)
+flask
+numpy
+base64
+wavelet
+```
+
+**Model**
+```bash
+ pandas
+ cv2
+ matplotlib
+ Python Wavelet
+ sklearn
+ seaborn
+ joblib
+ json
 ```
 
 ## Installation
@@ -59,92 +73,21 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/rudrax14/MERN_STACK-StudentTeacher-Booking-Appointment
+    git clone <url>
     ```
 
 2. **Install backend dependencies:**
     ```bash
-    cd backend
-    npm install
+    cd server
+    python server.py
     ```
-
-3. **Install frontend dependencies:**
-    ```bash
-    cd frontend
-    npm install
-    ```
-
-4. **Set up environment variables for the backend:**
-
-    Create a `.env` file in the `backend` directory with the following content:
-    ```env
-    DB_URL=''
-    JWT_KEY = ''
-    PORT = 5000
-
-    # mail integration 
-
-    MAIL_HOST = smtp.gmail.com
-    MAIL_USER = 'your_mail'
-    MAIL_PASS = 
-    ```
-
-5. **Run the backend server:**
-    ```bash
-    cd backend
-    npm run dev
-    ```
-
-6. **Run the frontend server:**
-    ```bash
-    cd frontend
-    npm run dev
-    ```
-7. **Set up environment variables for frontend:**
-
-    Create a `.env.local` file in the `frontend` directory with the following content:
-    ```env
-    VITE_BACKEND_URL='http://localhost:5000'
-    ``` 
-
-The application should now be running on `http://localhost:5173/`.
-
-## Usage
-
-1. **Admin:**
-    - Log in to the admin dashboard.
-    - Add, update, or delete teachers.
-    - Approve student registrations.
-
-2. **Teacher:**
-    - Log in to the teacher portal.
-    - Schedule, approve, or cancel appointments.
-    - Send email alerts to students.
-    - View messages and all appointments.
-
-3. **Student:**
-    - Register and log in to the student portal.
-    - Book appointments with teachers.
-    - Send email alerts and messages to teachers.
 
 ## Screenshots
 
 Landing Page 
 
-![landingpage Dark](https://github.com/rudrax14/MERN_STACK-StudentTeacher-Booking-Appointment/assets/97178716/d3d4b1ef-e3ff-413e-afd4-3dabce321705)
+![landingpage Dark]()
 
-Student Dashboard
-
-![student dashboard dark](https://github.com/rudrax14/MERN_STACK-StudentTeacher-Booking-Appointment/assets/97178716/ab39e093-3bad-4101-982d-5eb459593580)
-
-Teacher Dashboard
-
-![teacher d Dark](https://github.com/rudrax14/MERN_STACK-StudentTeacher-Booking-Appointment/assets/97178716/ab56fb55-e38f-47d9-9622-0e48257d06e5)
-
-
-Admin Dashboard
-
-![admin ](https://github.com/rudrax14/MERN_STACK-StudentTeacher-Booking-Appointment/assets/97178716/5a3a856a-e26c-4e83-8179-1bb4da6ee810)
 
 
 
