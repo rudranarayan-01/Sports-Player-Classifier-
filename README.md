@@ -73,7 +73,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone <url>
+    git clone https://github.com/rudranarayan-01/Sports-Player-Classifier-
     ```
 
 2. **Install backend dependencies:**
