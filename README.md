@@ -6,39 +6,33 @@ This is an end to end project on Image classification where our end goal is to b
 ## Different Steps
 This Sports Person Classification project carries different steps :
 
-Gather and Scrape Sports Person Data
-Data cleaning using Haar Cascade from OpenCV
-Feature Engineering using Wavelet Transforms
-Model building
-Create Python Flask server
-Build a Website
+- Gather and Scrape Sports Person Data
+- Data cleaning using Haar Cascade from OpenCV
+- Feature Engineering using Wavelet Transforms
+- Model building
+- Create Python Flask server
+- Build a Website
 
-## Features
-- Admin management for adding, updating, and deleting teachers and approving student registrations.
-- Teacher functionalities for managing their appointment schedules, approving/cancelling appointments, sending email alerts to students, viewing messages, and viewing all appointments.
-- Student functionalities for registering, booking appointments with teachers, sending email alerts to teachers, and sending messages.
 
 ## System Modules
 
-### Admin
-- Add Teacher (Name, Department, Subject, etc.)
-- Update/Delete Teacher
-- Approve Registration Student
+### Step 1: Gather and Scrape Sports Person Data
+Gather and Scrape data is done by different ways like we can Manually Download Image from Google, Using Python and Web scrapping, Buy Data from third party vendors or Fatkun Chrome Tool. For our project we have collected data using Fatkun Chrome Tool, it download images from web and you can also filter the images based on width.
 
-### Teacher
-- Login
-- Schedule Appointment
-- Approve/Cancel Appointment
-- Send Email Alerts to Students
-- View Messages
-- View All Appointments
+### Step 2: Data cleaning using Haar Cascade from OpenCV
+After gathering all images we want to detect if the face in the image is clearly visible or not and for that you will try to detect a face with two eyes. If the face and eyes are clearly visible then we will keep that image otherwise we will discard it. For face detection and the eyes detection we are using Haar Cascade from OpenCV which is a famous image processing library in Python.
 
-### Student
-- Register
-- Login
-- Book Appointment
-- Send Email Alert to Teacher
-- Send Message
+### Step 3: Feature Engineering using Wavelet Transforms
+The wavelet transform is a tool that cuts up data, functions or operators into different frequency components, and then studies each component with a resolution matched to its scale. In wavelet transformed image, you can see edges clearly and that can give us clues on various facial features such as eyes, nose, lips etc. In our case we are doing a sports celebrity classification only for five players which are, Kohli, Roger Federer Serena, Williams Liana, Messi and Maria sharapova.
+
+### Step 4: Model building
+Used SVM with linear kernel tuned with fine tuning for Model building. We tried support vector machine because vector machine tends to perform good when it comes to classification then we also tried couple of other models using GridSearchCV.
+
+### Step 5: Create Python Flask Server
+Python Flask Sever use exported pickle file and JSON file, it does the actual image classification. This flask server is used as a back end for UI application. when you drag and drop image on the UI, UI will convert it to base64 string and send it to back-end, So to use that image back-end needs to convert it.
+
+### Step 6: Build a Website
+On website UI we drag and drop the image on the Drop Zone and when it send this image to back-end, Python Flask Sever will use that image for the classification. We are going to build a website or UI or a front-end for our sport persons classifier project we will be using a simple HTML, CSS, JavaScript to build the UI which will make HTTP call to our back-end using j Query.
 
 ## Tech-Stack-Used
 
