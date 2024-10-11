@@ -86,7 +86,8 @@ To run this project locally, follow these steps:
 
 Landing Page 
 
-![landingpage Dark]()
+![landingpage Dark](![Screenshot 2024-10-10 132216](https://github.com/user-attachments/assets/08012f03-93a7-48a3-b801-3a3ab44b79d0)
+)
 
 
 
