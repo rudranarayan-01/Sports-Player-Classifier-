@@ -3,3 +3,4 @@ joblib==1.4.2
 numpy==2.1.2
 opencv_python==4.10.0.84
 pywavelet==0.0.1b0
+Gunicorn
